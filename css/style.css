@@ -1,0 +1,118 @@
+/* Customizing header*/
+
+#head {
+    background-color: #46d7ac;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+}
+
+
+/* Customizing footer*/
+
+#foot {
+    background-color: #46d7ac;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: small;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+
+/* Customizing elements*/
+
+#formDiv {
+    margin-top: 15px;
+}
+
+
+/* Customizing Button to enroll a student*/
+
+#enrollStudent {
+    white-space: normal;
+    background-color: rgb(0, 102, 255);
+    display: inline;
+    border: white;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+
+/* Customizing Button to clear the table*/
+
+#clear {
+    background-color: red;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    border: white;
+    width: 70px;
+    margin-left: 25px;
+}
+
+
+/* Insertion of line in the center of the page*/
+
+.vl {
+    border-left: 2px solid #46d7ac;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 55px;
+    top: 0;
+}
+
+#uppergap {
+    margin-top: 70px;
+}
+
+
+/* Customizing Table properties*/
+
+table {
+    border: 1px solid #748b2e;
+    text-align: left;
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+table th {
+    background-color: #a7c942;
+    color: white;
+    font-weight: bold;
+    border-left: 1px solid #748b2e;
+    border-bottom: 1px solid #748b2e;
+}
+
+table tr {
+    border-bottom: 1px solid #748b2e;
+}
+
+table td {
+    border-left: 1px solid #748b2e;
+    border-right: 1px solid #748b2e;
+}
+
+table td:first-child {
+    border-left: 1px solid #748b2e;
+}
+
+table td:last-child {
+    border-right: 1px solid #748b2e;
+}

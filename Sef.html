@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="eng-us">
+
+<!-- Head of the html document -->
+
+<head>
+    <div class="vl"></div>
+    <title>
+        Student Enrollment Form
+    </title>
+    <meta charset="utf-8">
+
+    <!--Making the page responsive using meta customize tag-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <!-- Linking css file with html document -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Linking Bootstrap css file with html document -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- Linking Bootstrap js file -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+
+    <!-- Header -->>
+    <div id="head">
+        Student Enrollment Form
+    </div>
+</head>
+
+<!--Body of the html document-->
+
+<body>
+
+    <!--Div tag for form and table -->
+
+    <div class="row p-4">
+
+        <!--Creation of form-->
+        <form class="form-inline col-sm-6 col-md-6 border-end-cyan" id="form" name="form1">
+
+            <!--Creation of name input field-->
+            <div class="form-group row" id="uppergap">
+                <label for="nameInput" class="col-sm-2">Name</label>
+                <div class="col-md-10">
+                    <input type="text" id="name">
+                </div>
+            </div>
+
+
+            <!--Creation of email input field-->
+            <div class="form-group row" id="formDiv">
+                <label for="emailInput" class="col-sm-2">Email</label>
+                <div class="col-md-10">
+                    <input type="text" id="email">
+                </div>
+            </div>
+
+            <!--Creation of website input field-->
+            <div class="form-group row" id="formDiv">
+                <label for="websiteInput" class="col-sm-2">Website</label>
+                <div class="col-md-10">
+                    <input type="text" id="website">
+                </div>
+            </div>
+
+            <!--Creation of image link input field-->
+            <div class="form-group row" id="formDiv">
+                <label for="imageInput" class="col-sm-2">Image link</label>
+                <div class="col-md-10">
+                    <input type="text" id="imageLink">
+                </div>
+            </div>
+
+            <!--Creation of Gender input field -->
+            <div class="form-group row" id="formDiv">
+                <label for="genderInput" class="col-sm-2">Gender</label>
+
+                <!--Creation of radio buttons-->
+                <div class="col-md-10">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <!--Creation of Skills input field-->
+            <div class="form-group row" id="formDiv">
+                <label for="skillsInput" class="col-sm-2">Skills</label>
+
+                <!--Creation of checkboxes-->
+                <div class="col-md-10">
+                    <input type="checkbox" id="java" name="skills" value="Java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="html" style="margin-left: 15px;" name="skills" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" style="margin-left: 15px;" name="skills" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+
+                <!--Creation of Buttons for inserting data in table and deleting data from table-->
+                <div class="col-md-10">
+                    <button type="button" id="enrollStudent" onclick="addRow()">
+                        Enroll Student
+                        </button>
+                    <button type="button" id="clear" onclick="clearTable()">
+                            Clear
+                    </button>
+                </div>
+            </div>
+
+        </form>
+
+        <!--Creation of Table section-->
+        <div class="col-sm-6 col-md-6 text-center" id="uppergap">
+
+            <p style="font-weight: bold;">
+                Enrolled Students
+            </p>
+
+            <!--Creation of Table -->
+            <table id="table">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Description
+                        </th>
+                        <th style="width: 30%;">
+                            Image
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Linking Javascript file with the html document-->
+            <script src="./script/script.js"></script>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div style="position: relative;">
+        <p id="foot">
+            Copyright 2020-2021 by Fresher Training
+        </p>
+    </div>
+
+</body>
+
+</html>
